@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petros Malamas </title>
+    <title>Petros Malamas</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -38,8 +38,7 @@
         header li {
             float: left;
             display: inline;
-            padding: 0 
-            20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
             float: left;
@@ -69,19 +68,30 @@
             padding: 100px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        #about h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
         #about .content {
             display: flex;
             justify-content: space-between;
             max-width: 1200px;
             margin: auto;
+            text-align: left;
         }
-        #about .content .left,
-        #about .content .right {
+        #about .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+        #about .left,
+        #about .right {
             flex: 1;
             margin: 0 20px;
         }
-        #about .content .left {
+        #about .left {
             margin-right: 40px;
         }
         #about p {
@@ -166,9 +176,11 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
+            <div class="intro">
+                <p>Hi! I'm Petros Malamas, a passionate Data Scientist based in Athens. I have hands-on experience working on various data science projects and a strong interest in AI, machine learning, deep learning, and data analysis. Here are some key points about me:</p>
+            </div>
             <div class="content">
                 <div class="left">
-                    <p>Hi! I'm Petros Malamas, a passionate Data Scientist based in Athens. I have hands-on experience working on various data science projects and a strong interest in AI, machine learning, deep learning, and data analysis. Here are some key points about me:</p>
                     <ul>
                         <li>🌍 I'm based in Athens</li>
                         <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
@@ -197,9 +209,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
+        </section>
+        <section id="projects">
+            <div class="container">
             <h2>My Projects</h2>
             <div class="project">
                 <img src="https://img.freepik.com/free-photo/hands-working-with-office-items_1921-176.jpg" alt="Project Image">
