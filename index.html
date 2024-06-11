@@ -70,6 +70,18 @@
             padding: 100px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center; /* Center the text */
+        }
+        #about p {
+            font-size: 24px;
+            max-width: 1200px;
+            margin: auto;    
+
+        }
+        #about ul, #about h3, #about .tools {
+            text-align: left; /* Align lists, headings, and tools to the left */
+            display: inline-block; /* Ensure elements don't take full width */
+            margin: auto;
         }
         #projects {
             padding: 100px ;
@@ -142,17 +154,17 @@
             <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic;  margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
         </div>
     </section>
-    <section id="about" class="container" style="text-align: center;">
+    <section id="about" class="container"
         <h2>About Me</h2>
         <p style="font-size: 24px; max-width: 1200px; margin: auto;">Hi! I'm Petros Malamas, a passionate Data Scientist based in Athens. I have hands-on experience working on various data science projects and a strong interest in AI, machine learning, deep learning, and data analysis. Here are some key points about me:</p>
-        <ul style="display: inline-block; text-align: left;">
+        <ul style="text-align: left;">
             <li>🌍 I'm based in Athens</li>
             <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
             <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy</li>
             <li>🤝 I'm open to collaborating on interesting projects</li>
         </ul>
         <h3>Certificates:</h3>
-        <ul style="display: inline-block; text-align: left;">
+        <ul style="text-align: left;">
             <li><a href="https://coursera.org/verify/professional-cert/J6NPSB2A423N" target="_blank">IBM Data Engineering Professional Certificate</a></li>
             <li><a href="https://www.datacamp.com/certificate/DAA0011055314465" target="_blank">Data Analyst Associate</a></li>
             <li><a href="https://www.datacamp.com/certificate/DSA0018617730565" target="_blank">Data Scientist Associate</a></li>
@@ -161,7 +173,7 @@
         <div style="display: flex; justify-content: center;">
             <div style="flex: 1;">
                 <h3>Tools:</h3>
-                <div class="tools">
+                <div class="tools" style="text-align: left;">
                     <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="width: 50px; margin-right: 10px;">
                     <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL" style="width: 50px; margin-right: 10px;">
                     <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git" style="width: 50px; margin-right: 10px;">
