@@ -119,63 +119,43 @@
             flex: 1;
             text-align: center;
         }
-        #about .right .tools-container {
+        .tools-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-end;
+            justify-content: space-around;
+            align-items: flex-start;
             margin-top: 20px;
         }
-        #about .right .tools-container .tools {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 20px;
+        .tools {
+            text-align: center;
         }
-        #about .right .tools-container .tools .tool {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-color: #fff;
-            margin: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 16px;
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        #about .right .tools-container .tools .tool img {
-            width: 50px;
+        .tools img {
+            width: 80px;
             height: auto;
             margin-bottom: 10px;
         }
-        #about .right .tools-container .tools .tool .name {
-            margin-top: 5px;
+        .tools .tool {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        #projects {
-            padding: 100px;
-            background: #f4f4f4;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        .tools .tool .name {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
         }
-        #projects h2 {
+        .programming-tools {
+            margin-top: 20px;
             text-align: center;
-            margin-bottom: 20px;
         }
-        .project {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .project img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-        .project .details {
-            flex: 1;
+        .programming-tools span {
+            display: block;
+            font-size: 18px;
         }
         footer {
             padding: 20px;
@@ -184,7 +164,6 @@
             background-color: #333;
             text-align: center;
         }
-        /* CSS for social links */
         .social-links {
             margin-top: 40px;
         }
@@ -192,15 +171,6 @@
             width: 40px;
             height: auto;
             margin-right: 10px;
-        }
-        /* Additional styles */
-        .programming-tools {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .programming-tools span {
-            display: block;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -252,57 +222,57 @@
                             <div class="tool">
                                 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
                                 <div class="name">Python</div>
-                                <span>Python</span>
                             </div>
+                            <span>Python</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL">
                                 <div class="name">SQL</div>
-                                <span>SQL</span>
                             </div>
+                            <span>SQL</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
                                 <div class="name">MongoDB</div>
-                                <span>MongoDB</span>
                             </div>
+                            <span>MongoDB</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://static-00.icon-icons.com/icons2/2699/PNG/512/tensorflow_logo_icon_168671.png" alt="Tensorflow">
                                 <div class="name">Tensorflow</div>
-                                <span>Tensorflow</span>
                             </div>
+                            <span>Tensorflow</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git">
                                 <div class="name">Git</div>
-                                <span>Git</span>
                             </div>
+                            <span>Git</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Microsoft Office">
                                 <div class="name">Microsoft Office</div>
-                                <span>Microsoft Office</span>
                             </div>
+                            <span>Microsoft Office</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://static-00.icon-icons.com/icons2/159/PNG/512/power_bi_icon-icons.com_64029.png" alt="Power Bi">
                                 <div class="name">Power Bi</div>
-                                <span>Power Bi</span>
                             </div>
+                            <span>Power Bi</span>
                         </div>
                         <div class="tools">
                             <div class="tool">
                                 <img src="https://www.python.org/community/logos/Apple-touch-icon-144x144.png" alt="Numpy">
                                 <div class="name">Numpy</div>
-                                <span>Numpy</span>
                             </div>
+                            <span>Numpy</span>
                         </div>
                     </div>
                 </div>
