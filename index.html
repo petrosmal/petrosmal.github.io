@@ -66,10 +66,10 @@
         }
         #about {
             position: relative;
-            padding: 150px;
-            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover;
-            background-size: cover;
-            color: #fff;
+            padding: 150px; /* Adjusted padding */
+            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover; /* Added background image */
+            background-size: cover; /* Ensure the background covers the entire section */
+            color: #fff; /* Change text color for better contrast */
             text-align: center;
         }
         #about::before {
@@ -79,13 +79,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(0, 0, 0, 0.7); /* 70% transparency */
             z-index: 0;
         }
         #about .container {
             position: relative;
             z-index: 1;
         }
+
+        
         #about h2 {
             text-align: center;
             margin-bottom: 20px;
@@ -96,66 +98,54 @@
             max-width: 1200px;
             margin: auto;
             text-align: left;
-            margin-top: 14px;
+            margin-top: 14px; /* Adjusted margin-top */
         }
         #about .intro {
             text-align: center;
             max-width: 800px;
             margin: 0 auto 40px auto;
         }
-        #about .left {
-            flex: 1;
-            text-align: left;
-        }
-        #about .left ul {
-            list-style-type: none;
-            padding: 0;
-            font-size: 24px;
-        }
-        #about .left ul li {
-            margin-bottom: 20px;
-        }
+        #about .left,
         #about .right {
             flex: 1;
-            text-align: center;
+            margin: auto;
         }
-        .tools-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-start;
-            margin-top: 20px;
+        #about .left {
+            margin-right: 40px;
+            margin-top: 20px; /* Adjusted margin-top to move the bullets upward */
         }
-        .tools {
-            text-align: center;
+        #about p {
+            font-size: 24px;
         }
-        .tools img {
-            width: 80px;
-            height: auto;
+        #about ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #about li {
             margin-bottom: 10px;
         }
-        .tools .tool {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            background-color: #fff;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        #projects {
+            padding: 100px;
+            background: #f4f4f4;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        .tools .tool .name {
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: bold;
-        }
-        .programming-tools {
-            margin-top: 20px;
+        #projects h2 {
             text-align: center;
+            margin-bottom: 20px;
         }
-        .programming-tools span {
-            display: block;
-            font-size: 18px;
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .project img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .project .details {
+            flex: 1;
         }
         footer {
             padding: 20px;
@@ -164,122 +154,107 @@
             background-color: #333;
             text-align: center;
         }
+        /* CSS for social links */
         .social-links {
-            margin-top: 40px;
+            margin-top: 40px; /* Adjust the spacing between the text and social links */
         }
         .social-links img {
-            width: 40px;
+            width: 40px; /* Adjust the width of the social media icons */
             height: auto;
-            margin-right: 10px;
+            margin-right: 10px; /* Adjust the spacing between the icons */
+        }
+        .right h3 {
+            margin-top: 20px; /* Adjust the margin to move the heading further down */
+        /* Adjustments */
+        }    
+        .tools-container {
+            margin-top: 60px; /* Adjust the margin to move the tools section further down */
+            text-align: center; /* Center align the tools section */
+            margin-right: 120px;
+        }
+        .tools-heading {
+        margin-top: 40px; /* Adjust the margin to move the Tools heading further down */
+        }
+
+        .tools {
+            display: inline-block; /* Make the tools section inline-block */
+        }
+        .tools img {
+            width: 50px; /* Adjust the width of the tool icons */
+            height: auto;
+            margin-top: -50px;
+            margin-right: 10px; /* Adjust the spacing between the icons */
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Petros Malamas</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#showcase">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-            </nav>
+    <div id="branding">
+        <h1>Petros Malamas</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<section id="showcase">
+<div class="container">
+    <h1>Welcome to my Portfolio</h1>
+    <p>Social Networks</p>
+    <div class="social-links">
+        <!-- Small images for links -->
+        <a href="https://www.linkedin.com/in/petros-malamas-b8ab821b0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://www.facebook.com/petros.ml125" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+        <a href="https://github.com/petrosmal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+    </div>
+    <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic; margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
+</div>
+</section>
+<section id="about">
+<div class="container">
+    <h2>About Me</h2>
+    <div class="intro">
+        <p>Hi! I'm Petros Malamas, a passionate Data Scientist based in Athens. I have hands-on experience working on various data science projects and a strong interest in AI, machine learning, deep learning, and data analysis. Here are some key points about me:</p>
+    </div>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li>🌍 I'm based in Athens</li>
+                <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
+                <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy
+                <li>🤝 I'm open to collaborating on interesting projects</li>
+            </ul>
         </div>
-    </header>
-    <section id="showcase">
-        <div class="container">
-            <h1>Welcome to my Portfolio</h1>
-            <p>Social Networks</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/petros-malamas-b8ab821b0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-                <a href="https://www.facebook.com/petros.ml125" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
-                <a href="https://github.com/petrosmal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
-            </div>
-            <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic; margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
-        </div>
-    </section>
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="intro">
-                <p>Hi! I'm Petros Malamas, a passionate Data Scientist based in Athens. I have hands-on experience working on various data science projects and a strong interest in AI, machine learning, deep learning, and data analysis. Here are some key points about me:</p>
-            </div>
-            <div class="content">
-                <div class="left">
-                    <ul>
-                        <li>🌍 I'm based in Athens</li>
-                        <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
-                        <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy</li>
-                        <li>🤝 I'm open to collaborating on interesting projects</li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <div class="tools-container">
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
-                                <div class="name">Python</div>
-                            </div>
-                            <span>Python</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL">
-                                <div class="name">SQL</div>
-                            </div>
-                            <span>SQL</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
-                                <div class="name">MongoDB</div>
-                            </div>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://static-00.icon-icons.com/icons2/2699/PNG/512/tensorflow_logo_icon_168671.png" alt="Tensorflow">
-                                <div class="name">Tensorflow</div>
-                            </div>
-                            <span>Tensorflow</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git">
-                                <div class="name">Git</div>
-                            </div>
-                            <span>Git</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Microsoft Office">
-                                <div class="name">Microsoft Office</div>
-                            </div>
-                            <span>Microsoft Office</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://static-00.icon-icons.com/icons2/159/PNG/512/power_bi_icon-icons.com_64029.png" alt="Power Bi">
-                                <div class="name">Power Bi</div>
-                            </div>
-                            <span>Power Bi</span>
-                        </div>
-                        <div class="tools">
-                            <div class="tool">
-                                <img src="https://www.python.org/community/logos/Apple-touch-icon-144x144.png" alt="Numpy">
-                                <div class="name">Numpy</div>
-                            </div>
-                            <span>Numpy</span>
-                        </div>
-                    </div>
+        <div class="right">
+            <h3>Certificates:</h3>
+            <ul>
+                <li><a href="https://coursera.org/verify/professional-cert/J6NPSB2A423N" target="_blank">IBM Data Engineering Professional Certificate</a></li>
+                <li><a href="https://www.datacamp.com/certificate/DAA0011055314465" target="_blank">Data Analyst Associate</a></li>
+                <li><a href="https://www.datacamp.com/certificate/DSA0018617730565" target="_blank">Data Scientist Associate</a></li>
+                <li><a href="https://www.udemy.com/certificate/UC-c55a6c83-51bf-4077-a828-9cf7f47f3eaf/" target="_blank">Learning Python for Data Analysis and Visualization</a></li>
+            </ul>
+            <h3 class="tools-heading">Tools:</h3>
+            <div class="tools-container">
+               <div class="tools">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+                    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tensorflow_logo_icon_168671.png" alt="Tensorflow">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Microsoft Office">
+                    <img src="https://static-00.iconduck.com/assets.00/power-bi-icon-1536x2048-0xah5g2o.png" alt="Power Bi">
                 </div>
             </div>
         </div>
-    </section>
-    <section id="projects">
+    </div>
+</div>
+</section>
+<section id="projects">
         <div class="container">
             <h2>My Projects</h2>
             <div class="project">
@@ -302,16 +277,14 @@
                 <img src="https://img.freepik.com/free-photo/commercial-airplane-flying-clouds_90220-1444.jpg" alt="Project Image">
                 <div class="details">
                     <h3>Airplane Passenger Satisfaction</h3>
-                    <p>Airline Passenger Satisfaction - Bootcamp In collaboration with: Marios Almpanopoulos, Petros Batakis. This project includes the creation of a supervised machine learning algorithm and a presentation of its application, in order to study the levels of airline passenger satisfaction. It was performed during the Big Blue Data Science Bootcamp (2023).</p>
+                    <p>A Airline Passenger Satisfaction - Bootcamp In collaboration with: Marios Almpanopoulos, Petros Batakis. This project includes the creation of a supervised machine learning algorithm and a presentation of its application, in order to study the levels of airline passenger satisfaction. It was performed during the Big Blue Data Science Bootcamp (2023).</p>
                     <a href="https://github.com/petrosmal/Machine-Learning-Projects/tree/main/Supervised/Airline%20Passenger%20Satisfaction%20-%20Bootcamp" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div class="container">
-            <p>Petros Malamas &copy; 2023, All Rights Reserved</p>
-        </div>
+        <p>Petros Malamas &copy; 2023, All Rights Reserved</p>
     </footer>
 </body>
 </html>
