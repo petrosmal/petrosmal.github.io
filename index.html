@@ -66,12 +66,12 @@
         }
         #about {
             position: relative;
-            padding: 150px;
-            color: #fff;
+            padding: 150px; /* Adjusted padding */
+            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover; /* Added background image */
+            background-size: cover; /* Ensure the background covers the entire section */
+            color: #fff; /* Change text color for better contrast */
             text-align: center;
-            background: rgba(0, 0, 0, 0.7); /* Ensure text is readable */
         }
-        
         #about::before {
             content: "";
             position: absolute;
@@ -79,12 +79,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover;
-            background-size: cover;
-            opacity: 0.9999; /* Adjust the opacity value to control the transparency */
+            background: rgba(0, 0, 0, 0.7); /* 70% transparency */
             z-index: 0;
         }
-        
         #about .container {
             position: relative;
             z-index: 1;
