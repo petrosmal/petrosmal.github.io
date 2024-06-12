@@ -122,6 +122,34 @@
         #about li {
             margin-bottom: 10px;
         }
+        .tools-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: 40px auto;
+        }
+        .tool {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #77d42a;
+            color: #fff;
+            font-weight: bold;
+        }
+        .tool:nth-child(1) { top: 50%; left: 0%; }
+        .tool:nth-child(2) { top: 19%; left: 19%; }
+        .tool:nth-child(3) { top: 0%; left: 50%; }
+        .tool:nth-child(4) { top: 19%; left: 81%; }
+        .tool:nth-child(5) { top: 50%; left: 100%; }
+        .tool:nth-child(6) { top: 81%; left: 81%; }
+        .tool:nth-child(7) { top: 100%; left: 50%; }
+        .tool:nth-child(8) { top: 81%; left: 19%; }
+        .tool:nth-child(9) { top: 50%; left: 50%; background-color: #333; }
         #projects {
             padding: 100px;
             background: #f4f4f4;
@@ -152,33 +180,6 @@
             background-color: #333;
             text-align: center;
         }
-        .tools-container {
-            margin-top: 60px;
-            text-align: center;
-            position: relative;
-            width: 200px;
-            height: 200px;
-            margin: 60px auto;
-        }
-        .tools-container .tool {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            line-height: 60px;
-            text-align: center;
-            background: #333;
-            color: #fff;
-            border-radius: 50%;
-        }
-        .tools-container .tool:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(2) { top: 14.64%; left: 85.36%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(4) { top: 85.36%; left: 85.36%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(6) { top: 85.36%; left: 14.64%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(7) { top: 50%; left: 0; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(8) { top: 14.64%; left: 14.64%; transform: translate(-50%, -50%); }
-        .tools-container .tool:nth-child(9) { top: 0; left: 50%; transform: translate(-50%, -50%); }
     </style>
 </head>
 <body>
@@ -199,13 +200,6 @@
     <section id="showcase">
         <div class="container">
             <h1>Welcome to my Portfolio</h1>
-            <p>Social Networks</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/petros-malamas-b8ab821b0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-                <a href="https://www.facebook.com/petros.ml125" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
-                <a href="https://github.com/petrosmal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
-            </div>
-            <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic; margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
         </div>
     </section>
     <section id="about">
@@ -231,7 +225,7 @@
                         <li><a href="https://www.datacamp.com/certificate/DSA0018617730565" target="_blank">Data Scientist Associate</a></li>
                         <li><a href="https://www.udemy.com/certificate/UC-c55a6c83-51bf-4077-a828-9cf7f47f3eaf/" target="_blank">Learning Python for Data Analysis and Visualization</a></li>
                     </ul>
-                    <h3 class="tools-heading">Tools:</h3>
+                    <h3>Tools:</h3>
                     <div class="tools-container">
                         <div class="tool">Python</div>
                         <div class="tool">SQL</div>
