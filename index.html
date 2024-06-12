@@ -65,12 +65,27 @@
             font-size: 20px;
         }
         #about {
+            position: relative;
             padding:  150px; /* Adjusted padding */
-            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover; /* Added background image */
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: url('https://cdn.pixabay.com/photo/2015/03/26/09/39/background-690086_1280.jpg') no-repeat center center/cover;
+            background-size: cover;
             text-align: center;
-            background-size: cover; /* Ensure the background covers the entire section */
-            color: #fff; /* Change text color for better contrast */
+            color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* 70% opacity */
+            z-index: 1;
+        }
+        #about .container {
+            position: relative;
+            z-index: 2;
         }
         #about h2 {
             text-align: center;
@@ -154,7 +169,7 @@
         .tools-container {
             margin-top: 60px; /* Adjust the margin to move the tools section further down */
             text-align: center; /* Center align the tools section */
-            margin-right: 120px;
+            margin-right: 120px
         }
         .tools-heading {
         margin-top: 40px; /* Adjust the margin to move the Tools heading further down */
@@ -210,7 +225,7 @@
             <ul>
                 <li>🌍 I'm based in Athens</li>
                 <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
-                <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy
+                <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy</li>
                 <li>🤝 I'm open to collaborating on interesting projects</li>
             </ul>
         </div>
