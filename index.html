@@ -156,42 +156,27 @@
         .project .details {
             flex: 1;
         }
+        .project-link {
+            margin-top: 10px; /* Adjusted margin for the link */
+            text-align: right; /* Align link to the right */
+        }
+        .project-link a {
+            background-color: #77d42a; /* Green background */
+            color: #fff; /* White text color */
+            padding: 8px 16px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .project-link a:hover {
+            background-color: #5cbf0d; /* Darker green on hover */
+        }
         footer {
             padding: 20px;
             margin-top: 20px;
             color: #fff;
             background-color: #333;
             text-align: center;
-        }
-        /* CSS for social links */
-        .social-links {
-            margin-top: 40px; /* Adjust the spacing between the text and social links */
-        }
-        .social-links img {
-            width: 40px; /* Adjust the width of the social media icons */
-            height: auto;
-            margin-right: 10px; /* Adjust the spacing between the icons */
-        }
-        .right h3 {
-            margin-top: 20px; /* Adjust the margin to move the heading further down */
-        }
-        /* Adjustments */
-        .tools-container {
-            margin-top: 60px; /* Adjust the margin to move the tools section further down */
-            text-align: center; /* Center align the tools section */
-            margin-right: 120px;
-        }
-        .tools-heading {
-            margin-top: 40px; /* Adjust the margin to move the Tools heading further down */
-        }
-        .tools {
-            display: inline-block; /* Make the tools section inline-block */
-        }
-        .tools img {
-            width: 50px; /* Adjust the width of the tool icons */
-            height: auto;
-            margin-top: -50px;
-            margin-right: 10px; /* Adjust the spacing between the icons */
         }
     </style>
 </head>
@@ -273,7 +258,9 @@
                 <div class="details">
                     <h3>San Francisco Salaries</h3>
                     <p>This project employs SQL to analyze San Francisco city employee salaries from 2011 to 2014. It aims to uncover trends in compensation distribution, including base pay, overtime, and benefits across various employee groups. Additionally, the analysis seeks to identify any evidence of gender-based pay discrimination within the dataset. Ultimately, this exploration will provide insights into budget allocation and workforce dynamics within the city government.</p>
-                    <a href="https://github.com/petrosmal/SQL-Projects/tree/main/SAN%20FRANSISCO%20SALARIES" target="_blank">View on GitHub</a>
+                    <div class="project-link">
+                        <a href="https://github.com/petrosmal/SQL-Projects/tree/main/SAN%20FRANSISCO%20SALARIES" target="_blank">View on GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="project">
@@ -281,7 +268,9 @@
                 <div class="details">
                     <h3>Climate Change</h3>
                     <p>In this project, I use data from ClimateData API and various machine learning models to predict the temperature change over the next decade. The models are trained on historical climate data, including temperature, precipitation, and CO2 levels, to forecast future climate trends. The project aims to provide insights into the potential impact of climate change on our environment and help in planning mitigation strategies.</p>
-                    <a href="https://github.com/petrosmal/Data-Science-Bootcamp-Project-Interactive-Dashboard" target="_blank">View on GitHub</a>
+                    <div class="project-link">
+                        <a href="https://github.com/petrosmal/Data-Science-Bootcamp-Project-Interactive-Dashboard" target="_blank">View on GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="project">
@@ -289,7 +278,9 @@
                 <div class="details">
                     <h3>Airplane Passenger Satisfaction</h3>
                     <p>A Airline Passenger Satisfaction - Bootcamp In collaboration with: Marios Almpanopoulos, Petros Batakis. This project includes the creation of a supervised machine learning algorithm and a presentation of its application, in order to study the levels of airline passenger satisfaction. It was performed during the Big Blue Data Science Bootcamp (2023).</p>
-                    <a href="https://github.com/petrosmal/Machine-Learning-Projects/tree/main/Supervised/Airline%20Passenger%20Satisfaction%20-%20Bootcamp" target="_blank">View on GitHub</a>
+                    <div class="project-link">
+                        <a href="https://github.com/petrosmal/Machine-Learning-Projects/tree/main/Supervised/Airline%20Passenger%20Satisfaction%20-%20Bootcamp" target="_blank">View on GitHub</a>
+                    </div>
                 </div>
             </div>
         </div>
