@@ -66,7 +66,7 @@
         }
         #about {
             position: relative;
-            padding: 150px;
+            padding: 100px;
             background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover;
             background-size: cover;
             color: #fff;
@@ -122,36 +122,6 @@
         #about li {
             margin-bottom: 10px;
         }
-        .tools-container {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 40px auto;
-        }
-        .tool {
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            transform: translate(-50%, -50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background-color: #77d42a;
-            color: #fff;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-        }
-        .tool:nth-child(1) { top: 50%; left: 0%; }
-        .tool:nth-child(2) { top: 15%; left: 15%; }
-        .tool:nth-child(3) { top: 0%; left: 50%; }
-        .tool:nth-child(4) { top: 15%; left: 85%; }
-        .tool:nth-child(5) { top: 50%; left: 100%; }
-        .tool:nth-child(6) { top: 85%; left: 85%; }
-        .tool:nth-child(7) { top: 100%; left: 50%; }
-        .tool:nth-child(8) { top: 85%; left: 15%; }
-        .tool:nth-child(9) { top: 50%; left: 50%; background-color: #333; }
         #projects {
             padding: 100px;
             background: #f4f4f4;
@@ -182,6 +152,45 @@
             background-color: #333;
             text-align: center;
         }
+        /* CSS for social links */
+        .social-links {
+            margin-top: 40px;
+        }
+        .social-links img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .right h3 {
+            margin-top: 20px;
+        }
+        /* Circular layout for tools */
+        .tools-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 40px auto 0 auto;
+        }
+        .tools-container .tools {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            transform: translate(-50%, -50%);
+        }
+        .tools-container .tools img {
+            width: 50px;
+            height: auto;
+        }
+        .tools-container .tools:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg); }
+        .tools-container .tools:nth-child(2) { transform: translate(-50%, -50%) rotate(60deg) translate(100px) rotate(-60deg); }
+        .tools-container .tools:nth-child(3) { transform: translate(-50%, -50%) rotate(120deg) translate(100px) rotate(-120deg); }
+        .tools-container .tools:nth-child(4) { transform: translate(-50%, -50%) rotate(180deg) translate(100px) rotate(-180deg); }
+        .tools-container .tools:nth-child(5) { transform: translate(-50%, -50%) rotate(240deg) translate(100px) rotate(-240deg); }
+        .tools-container .tools:nth-child(6) { transform: translate(-50%, -50%) rotate(300deg) translate(100px) rotate(-300deg); }
+        .tools-container .tools:nth-child(7) { transform: translate(-50%, -50%) rotate(360deg) translate(100px) rotate(-360deg); }
     </style>
 </head>
 <body>
@@ -202,6 +211,13 @@
     <section id="showcase">
         <div class="container">
             <h1>Welcome to my Portfolio</h1>
+            <p>Social Networks</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/petros-malamas-b8ab821b0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                <a href="https://www.facebook.com/petros.ml125" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+                <a href="https://github.com/petrosmal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+            </div>
+            <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic; margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
         </div>
     </section>
     <section id="about">
@@ -214,66 +230,80 @@
                 <div class="left">
                     <ul>
                         <li>🌍 I'm based in Athens</li>
-                        <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail.com">petrosmalamas@hotmail.com</a></li>
+                        <li>✉️ You can contact me at <a href="mailto:petrosmalamas@hotmail
                         <li>🧠 I'm currently enrolled in the Data Science Bootcamp at Big Blue Data Academy</li>
-                        <li>🤝 I'm open to collaborating on interesting projects</li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <h3>Certificates:</h3>
-                    <ul>
-                        <li><a href="https://coursera.org/verify/professional-cert/J6NPSB2A423N" target="_blank">IBM Data Engineering Professional Certificate</a></li>
-                        <li><a href="https://www.datacamp.com/certificate/DAA0011055314465" target="_blank">Data Analyst Associate</a></li>
-                        <li><a href="https://www.datacamp.com/certificate/DSA0018617730565" target="_blank">Data Scientist Associate</a></li>
-                        <li><a href="https://www.udemy.com/certificate/UC-c55a6c83-51bf-4077-a828-9cf7f47f3eaf/" target="_blank">Learning Python for Data Analysis and Visualization</a></li>
-                    </ul>
-                    <h3>Tools:</h3>
-                    <div class="tools-container">
-                        <div class="tool">Python</div>
-                        <div class="tool">SQL</div>
-                        <div class="tool">MongoDB</div>
-                        <div class="tool">Power Bi</div>
-                        <div class="tool">Tensorflow</div>
-                        <div class="tool">Pandas</div>
-                        <div class="tool">Numpy</div>
-                        <div class="tool">Git</div>
-                        <div class="tool">Office</div>
-                    </div>
-                </div>
+<li>🤝 I'm open to collaborating on interesting projects</li>
+</ul>
+</div>
+<div class="right">
+    <h3>Certificates:</h3>
+    <ul>
+        <li><a href="https://coursera.org/verify/professional-cert/J6NPSB2A423N" target="_blank">IBM Data Engineering Professional Certificate</a></li>
+        <li><a href="https://www.datacamp.com/certificate/DAA0011055314465" target="_blank">Data Analyst Associate</a></li>
+        <li><a href="https://www.datacamp.com/certificate/DSA0018617730565" target="_blank">Data Scientist Associate</a></li>
+        <li><a href="https://www.udemy.com/certificate/UC-c55a6c83-51bf-4077-a828-9cf7f47f3eaf/" target="_blank">Learning Python for Data Analysis and Visualization</a></li>
+    </ul>
+    <h3 class="tools-heading">Tools:</h3>
+    <div class="tools-container">
+        <div class="tools">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+        </div>
+        <div class="tools">
+            <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL">
+        </div>
+        <div class="tools">
+            <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git">
+        </div>
+        <div class="tools">
+            <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB">
+        </div>
+        <div class="tools">
+            <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/tensorflow_logo_icon_168671.png" alt="Tensorflow">
+        </div>
+        <div class="tools">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Microsoft Office">
+        </div>
+        <div class="tools">
+            <img src="https://static-00.iconduck.com/assets.00/power-bi-icon-1536x2048-0xah5g2o.png" alt="Power Bi">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="https://img.freepik.com/free-photo/hands-working-with-office-items_1921-176.jpg" alt="Project Image">
+            <div class="details">
+                <h3>San Francisco Salaries</h3>
+                <p>This project employs SQL to analyze San Francisco city employee salaries from 2011 to 2014. It aims to uncover trends in compensation distribution, including base pay, overtime, and benefits across various employee groups. Additionally, the analysis seeks to identify any evidence of gender-based pay discrimination within the dataset. Ultimately, this exploration will provide insights into budget allocation and workforce dynamics within the city government.</p>
+                <a href="https://github.com/petrosmal/SQL-Projects/tree/main/SAN%20FRANSISCO%20SALARIES" target="_blank">View on GitHub</a>
             </div>
         </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <img src="https://img.freepik.com/free-photo/hands-working-with-office-items_1921-176.jpg" alt="Project Image">
-                <div class="details">
-                    <h3>San Francisco Salaries</h3>
-                    <p>This project employs SQL to analyze San Francisco city employee salaries from 2011 to 2014. It aims to uncover trends in compensation distribution, including base pay, overtime, and benefits across various employee groups. Additionally, the analysis seeks to identify any evidence of gender-based pay discrimination within the dataset. Ultimately, this exploration will provide insights into budget allocation and workforce dynamics within the city government.</p>
-                    <a href="https://github.com/petrosmal/SQL-Projects/tree/main/SAN%20FRANSISCO%20SALARIES" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://img.freepik.com/free-photo/climate-change-with-dry-soil_23-2149217819.jpg" alt="Project Image">
-                <div class="details">
-                    <h3>Climate Change</h3>
-                    <p>In this project, I use data from ClimateData API and various machine learning models to predict the temperature change over the next decade. The models are trained on historical climate data, including temperature, precipitation, and CO2 levels, to forecast future climate trends. The project aims to provide insights into the potential impact of climate change on our environment and help in planning mitigation strategies.</p>
-                    <a href="https://github.com/petrosmal/Data-Science-Bootcamp-Project-Interactive-Dashboard" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://img.freepik.com/free-photo/commercial-airplane-flying-clouds_90220-1444.jpg" alt="Project Image">
-                <div class="details">
-                    <h3>Airplane Passenger Satisfaction</h3>
-                    <p>A Airline Passenger Satisfaction - Bootcamp In collaboration with: Marios Almpanopoulos, Petros Batakis. This project includes the creation of a supervised machine learning algorithm and a presentation of its application, in order to study the levels of airline passenger satisfaction. It was performed during the Big Blue Data Science Bootcamp (2023).</p>
-                    <a href="https://github.com/petrosmal/Machine-Learning-Projects/tree/main/Supervised/Airline%20Passenger%20Satisfaction%20-%20Bootcamp" target="_blank">View on GitHub</a>
-                </div>
+        <div class="project">
+            <img src="https://img.freepik.com/free-photo/climate-change-with-dry-soil_23-2149217819.jpg" alt="Project Image">
+            <div class="details">
+                <h3>Climate Change</h3>
+                <p>In this project, I use data from ClimateData API and various machine learning models to predict the temperature change over the next decade. The models are trained on historical climate data, including temperature, precipitation, and CO2 levels, to forecast future climate trends. The project aims to provide insights into the potential impact of climate change on our environment and help in planning mitigation strategies.</p>
+                <a href="https://github.com/petrosmal/Data-Science-Bootcamp-Project-Interactive-Dashboard" target="_blank">View on GitHub</a>
             </div>
         </div>
-    </section>
-    <footer>
+        <div class="project">
+            <img src="https://img.freepik.com/free-photo/commercial-airplane-flying-clouds_90220-1444.jpg" alt="Project Image">
+            <div class="details">
+                <h3>Airplane Passenger Satisfaction</h3>
+                <p>A Airline Passenger Satisfaction - Bootcamp In collaboration with: Marios Almpanopoulos, Petros Batakis. This project includes the creation of a supervised machine learning algorithm and a presentation of its application, in order to study the levels of airline passenger satisfaction. It was performed during the Big Blue Data Science Bootcamp (2023).</p>
+                <a href="https://github.com/petrosmal/Machine-Learning-Projects/tree/main/Supervised/Airline%20Passenger%20Satisfaction%20-%20Bootcamp" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
         <p>Petros Malamas &copy; 2023, All Rights Reserved</p>
-    </footer>
+    </div>
+</footer>
 </body>
 </html>
