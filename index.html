@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petros Malamas</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,185 +13,185 @@
             color: #333;
             line-height: 1.6;
         }
-
         .container {
             margin: auto;
             overflow: hidden;
         }
-
         header {
             background: url('https://cdn.pixabay.com/photo/2022/04/21/06/11/waves-7146711_1280.jpg') no-repeat center center/cover;
             color: #fff;
             padding-top: 30px;
             min-height: 70px;
             border-bottom: #77d42a 3px solid;
-            background-size: cover;
+            background-size: 100%;
         }
-
         header a {
             color: #fff;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 16px;
         }
-
         header ul {
             padding: 0;
             list-style: none;
         }
-
         header li {
-            display: inline-block;
+            float: left;
+            display: inline;
             padding: 0 20px;
         }
-
-        #branding {
+        header #branding {
             float: left;
         }
-
-        #branding h1 {
+        header #branding h1 {
             margin: 0;
         }
-
         header nav {
             float: right;
             margin-top: 10px;
         }
-
         #showcase {
             min-height: 800px;
             background: #333;
             text-align: center;
             color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
-
         #showcase h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
         }
-
         #showcase p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
+            font-size: 20px;
         }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links img {
-            width: 40px;
-            height: auto;
-            margin: 0 10px;
-        }
-
-        .quote {
-            font-size: 1.2em;
-            font-style: italic;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
-            text-align: center;
-        }
-
         #about {
-            padding: 80px 0;
-            background: #222;
-            color: #fff;
+            position: relative;
+            padding: 150px; /* Adjusted padding */
+            background: url('https://www.nordicinnovation.org/sites/default/files/styles/featured/public/2022-12/AdobeStock_238240773.jpeg') no-repeat center center/cover; /* Added background image */
+            background-size: cover; /* Ensure the background covers the entire section */
+            color: #fff; /* Change text color for better contrast */
             text-align: center;
+        }
+        #about::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* 70% transparency */
+            z-index: 0;
+        }
+        #about .container {
+            position: relative;
+            z-index: 1;
         }
 
         #about h2 {
-            margin-bottom: 40px;
+            text-align: center;
+            margin-bottom: 20px;
         }
-
         #about .content {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+            margin-top: 14px; /* Adjusted margin-top */
         }
-
+        #about .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
         #about .left,
         #about .right {
             flex: 1;
-            padding: 0 20px;
+            margin: auto;
         }
-
+        #about .left {
+            margin-right: 40px;
+            margin-top: 20px; /* Adjusted margin-top to move the bullets upward */
+        }
+        #about p {
+            font-size: 24px;
+        }
         #about ul {
             list-style-type: none;
             padding: 0;
-            text-align: left;
         }
-
-        #about ul li {
+        #about li {
             margin-bottom: 10px;
         }
-
-        #about .right {
-            text-align: left;
-        }
-
-        #about .right h3 {
-            margin-top: 40px;
-        }
-
-        #about .tools-container {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        #about .tools-heading {
-            margin-top: 40px;
-        }
-
-        .tools {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .tools img {
-            width: 50px;
-            height: auto;
-            margin: 10px;
-        }
-
         #projects {
-            padding: 80px 0;
+            padding: 100px;
             background: #f4f4f4;
-            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
         #projects h2 {
-            margin-bottom: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
         }
-
         .project {
             display: flex;
-            align-items: flex-start;
-            margin-bottom: 40px;
-            text-align: left;
+            align-items: center;
+            margin-bottom: 40px; /* Increased margin for better separation */
+            padding: 20px; /* Added padding for each project item */
+            background-color: #fff; /* White background for each project item */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
         }
-
+        .project:hover {
+            transform: translateY(-5px); /* Lift project on hover */
+        }
         .project img {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             object-fit: cover;
             margin-right: 20px;
+            border-radius: 8px; /* Rounded image corners */
         }
-
         .project .details {
             flex: 1;
         }
-
         footer {
-            background-color: #333;
+            padding: 20px;
+            margin-top: 20px;
             color: #fff;
+            background-color: #333;
             text-align: center;
-            padding: 20px 0;
+        }
+        /* CSS for social links */
+        .social-links {
+            margin-top: 40px; /* Adjust the spacing between the text and social links */
+        }
+        .social-links img {
+            width: 40px; /* Adjust the width of the social media icons */
+            height: auto;
+            margin-right: 10px; /* Adjust the spacing between the icons */
+        }
+        .right h3 {
+            margin-top: 20px; /* Adjust the margin to move the heading further down */
+        }
+        /* Adjustments */
+        .tools-container {
+            margin-top: 60px; /* Adjust the margin to move the tools section further down */
+            text-align: center; /* Center align the tools section */
+            margin-right: 120px;
+        }
+        .tools-heading {
+            margin-top: 40px; /* Adjust the margin to move the Tools heading further down */
+        }
+        .tools {
+            display: inline-block; /* Make the tools section inline-block */
+        }
+        .tools img {
+            width: 50px; /* Adjust the width of the tool icons */
+            height: auto;
+            margin-top: -50px;
+            margin-right: 10px; /* Adjust the spacing between the icons */
         }
     </style>
 </head>
@@ -211,20 +210,19 @@
             </nav>
         </div>
     </header>
-
     <section id="showcase">
         <div class="container">
             <h1>Welcome to my Portfolio</h1>
             <p>Social Networks</p>
             <div class="social-links">
+                <!-- Small images for links -->
                 <a href="https://www.linkedin.com/in/petros-malamas-b8ab821b0" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
                 <a href="https://www.facebook.com/petros.ml125" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
                 <a href="https://github.com/petrosmal" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
             </div>
-            <p class="quote">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind Media </p>
+            <p style="font-size: 36px; margin-top: 60px; max-width: 1000px; font-style: italic; margin-left: auto; margin-right: auto; text-align: center; font-family:'Harlow Solid', 'Edwardian Script ITC', 'Brush Script MT', cursive;">“Data science is a combination of three things: quantitative analysis (for the rigor required to understand your data), programming (to process your data and act on your insights), and narrative (to help people comprehend what the data means).” — Darshan Somashekar, Co-founder, at Unwind media </p>
         </div>
     </section>
-
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
@@ -239,7 +237,7 @@
                         <li>🧠 Ι have finished Data Science Bootcamp at Big Blue Data Academy
                         <li>🏫 I'm a graduate of the school of Rural, Surveying and Geoinformatics Engineering at National Technical University of Athens</li>
                         <li>🤝 I'm open to collaborating on interesting projects</li>
-                        <li>💻 Proficient in Python, SQL, TensorFlow, MongoDB, Git, Microsoft Office</li>
+                        <li>💻 Proficient in Python,SQL,TensorFlow,MongoDB,Git,Microsoft Office</li>
                         <li>📚 Enthusiast in traveling, reading, cinema, and music</li>
                     </ul>
                 </div>
@@ -253,7 +251,7 @@
                     </ul>
                     <h3 class="tools-heading">Tools:</h3>
                     <div class="tools-container">
-                        <div class="tools">
+                       <div class="tools">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
                             <img src="https://cdn-icons-png.flaticon.com/512/2305/2305934.png" alt="SQL">
                             <img src="https://cdn-icons-png.flaticon.com/512/4494/4494748.png" alt="Git">
@@ -267,7 +265,6 @@
             </div>
         </div>
     </section>
-
     <section id="projects">
         <div class="container">
             <h2>My Projects</h2>
@@ -297,11 +294,8 @@
             </div>
         </div>
     </section>
-
     <footer>
-        <div class="container">
-            <p>Petros Malamas &copy; 2023, All Rights Reserved</p>
-        </div>
+        <p>Petros Malamas &copy; 2023, All Rights Reserved</p>
     </footer>
 </body>
 </html>
